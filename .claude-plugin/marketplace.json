@@ -1,0 +1,18 @@
+{
+  "name": "mws-cloud-platform-skills",
+  "description": "MWS Cloud Platform skills library",
+  "owner": {
+    "name": "MWS Cloud Platform"
+  },
+  "plugins": [
+    {
+      "name": "mws-cli",
+      "description": "Skill for managing resources on the MWS Cloud Platform using MWS CLI",
+      "source": "./plugins/mws-cli",
+      "version": "1.0.0",
+      "skills": [
+        "./skills/mws-cli"
+      ]
+    }
+  ]
+}
