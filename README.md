@@ -42,7 +42,7 @@ Add the marketplace to Claude Code:
 Install plugins individually:
 
 ```bash
-/plugin install mws-cli@skills
+/plugin install mws-cli@mws-cloud-platform-skills
 ```
 
 ### Claude Desktop
