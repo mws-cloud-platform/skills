@@ -1,0 +1,5 @@
+{
+  "name": "mws-terraform",
+  "version": "1.0.0",
+  "description": "Skill for managing MWS Cloud Platform infrastructure with Terraform (provider terraform-provider-mws)"
+}

@@ -13,6 +13,15 @@
       "skills": [
         "./skills/mws-cli"
       ]
+    },
+    {
+      "name": "mws-terraform",
+      "description": "Skill for managing MWS Cloud Platform infrastructure with Terraform (provider terraform-provider-mws)",
+      "source": "./plugins/mws-terraform",
+      "version": "1.0.0",
+      "skills": [
+        "./skills/mws-terraform"
+      ]
     }
   ]
 }
