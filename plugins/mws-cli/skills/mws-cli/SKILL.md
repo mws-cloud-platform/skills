@@ -28,7 +28,7 @@ description: Взаимодействие с облаком MWS Cloud Platform. 
 | 1 | Мутирующие операции | Создание, изменение, удаление ресурсов                   | [references/write-operations.md](references/write-operations.md) |
 | 2 | Читающие операции   | Просмотр, фильтрация ресурсов                            | [references/read-operations.md](references/read-operations.md)   |
 | 3 | Команды mws cli     | Прямой вызов утилиты mws cli, помощь с командами mws cli | [references/direct-commands.md](references/direct-commands.md)   |
-| 4 | Установка mws cli   | Если у пользователя отсутствует mws cli                  | [references/installation.md](references/installation.md)         |
+| 4 | Установка и настройка | Если у пользователя отсутствует mws cli или профиль    | [references/setup.md](references/setup.md)                       |
 
 ## Правила
 
@@ -49,4 +49,5 @@ description: Взаимодействие с облаком MWS Cloud Platform. 
   - Время ожидания по-умолчанию составляет 5 минут, его можно переопределить флагом `--wait-timeout`
   - В случае, если мутирующая операция не успевает завершиться на указанный таймаут, она не прерывается. Можно узнать статус операции через команду `get`. Если передать `--wait` в команду `get`, то можно дождаться завершения операции
   - Рекомендуемый порядок действий, если мутирующая операция не успела завершиться: сделать `get`, убедиться, что в ответе статус `PROCESSING` и нет ошибок, затем сделать `get --wait`
+- Если ресурс долго не удается создать, посмотри его полный статус: `mws <service> <resource> get <id> -f json`. В табличном выводе виден только краткий статус, полный объект `status` с деталями состояния ресурса приходит в JSON-выводе
 - Список зон можно узнать вызовом `mws resmanager zone list`, список регионов вызовом `mws resmanager region list`

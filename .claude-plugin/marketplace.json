@@ -9,7 +9,7 @@
       "name": "mws-cli",
       "description": "Skill for managing resources on the MWS Cloud Platform using MWS CLI",
       "source": "./plugins/mws-cli",
-      "version": "1.0.0",
+      "version": "1.3.0",
       "skills": [
         "./skills/mws-cli"
       ]
